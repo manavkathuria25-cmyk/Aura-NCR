@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed": "#9ef4cc", "inverse-surface": "#2f312f", "surface-container-lowest": "#ffffff", "surface-tint": "#586062", "on-secondary": "#ffffff", "on-tertiary": "#ffffff", "primary-container": "#2d3436", "on-surface": "#1a1c1a", "surface-container-low": "#f4f3f1", "outline": "#747879", "on-secondary-fixed-variant": "#005139", "tertiary-fixed-dim": "#8ed3d0", "secondary-container": "#9bf1c9", "tertiary-fixed": "#aaefec", "on-surface-variant": "#434749", "tertiary": "#002322", "primary-fixed": "#dde4e6", "on-primary-fixed-variant": "#41484a", "tertiary-container": "#003a39", "primary-fixed-dim": "#c1c8ca", "surface-bright": "#faf9f6", "on-secondary-container": "#0e7050", "surface": "#faf9f6", "on-primary": "#ffffff", "on-primary-container": "#959c9f", "error-container": "#ffdad6", "secondary-fixed-dim": "#82d7b0", "on-error-container": "#93000a", "surface-container-highest": "#e3e2e0", "secondary": "#036c4c", "on-primary-fixed": "#161d1f", "on-error": "#ffffff", "on-background": "#1a1c1a", "surface-container-high": "#e9e8e5", "surface-dim": "#dbdad7", "inverse-primary": "#c1c8ca", "on-tertiary-fixed": "#00201f", "background": "#faf9f6", "error": "#ba1a1a", "on-tertiary-fixed-variant": "#00504e", "surface-container": "#efeeeb", "surface-variant": "#e3e2e0", "outline-variant": "#c3c7c8", "inverse-on-surface": "#f2f1ee", "primary": "#181f21", "on-tertiary-container": "#63a7a5", "on-secondary-fixed": "#002115" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-xl": "2.5rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-lg": "1.5rem", "margin-tablet": "2rem", "space-sm": "0.5rem", "margin": "3rem", "space-xs": "0.25rem" }, "fontFamily": { "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "metric-display": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "metric-display-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "metric-display": ["72px", { "lineHeight": "76px", "letterSpacing": "-0.04em", "fontWeight": "700" }], "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "metric-display-mobile": ["54px", { "lineHeight": "58px", "letterSpacing": "-0.03em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface text-on-surface antialiased min-h-screen relative selection:bg-secondary-fixed selection:text-on-secondary-fixed"><div class="pointer-events-none fixed inset-0 z-0 overflow-hidden"><div class="absolute -top-32 left-1/4 h-96 w-96 rounded-full bg-secondary-fixed/20 blur-[100px]"></div><div class="absolute top-1/3 -right-20 h-80 w-80 rounded-full bg-tertiary-fixed/25 blur-[90px]"></div></div><header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(45,52,54,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Aura NCR Minimalist Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WVu1rLjM2M-fsiCVhdyMLjQGQjv6Ty7LoAZHrkNJLY--DIW8xmPVEr7WCtcjVrCJhL1ccdu355xQEqk9CqKAwfxWYf4yqkRVbTOUhALXf_qUHCDIKYOwOWLbId1QhQmWHzrlRKLeI3Y4_EoIiALzGNxUDvWyTzJfMIdqUzDwuuW_l0TTTlLyqw3PdErJurOp7bO6_1uvYN3U0a5FXJedF6UELstY73afQWtwBYCu9szGVHlwQWzhmurU8"/><div class="flex flex-col"><span class="font-label-lg text-label-lg tracking-tight text-primary leading-none">Aura NCR</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-space-xs">Delhi NCR Air Companion</span></div></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-lowest/80 px-space-md py-space-xs rounded-full shadow-[0_2px_12px_rgba(45,52,54,0.02)]"><span class="material-symbols-outlined text-[16px] text-secondary">location_on</span><span class="font-label-sm text-label-sm text-on-surface font-medium">Vasant Kunj, New Delhi</span><span class="font-label-sm text-label-sm text-outline mx-space-xs">•</span><span class="font-label-sm text-label-sm text-on-surface-variant">Updated 3m ago</span></div></div><nav class="hidden md:flex items-center p-space-xs bg-surface-container-low/70 rounded-full shadow-[0_1px_4px_rgba(45,52,54,0.03)]" data-active-classes="bg-primary-container text-on-primary font-label-md text-label-md rounded-full shadow-[0_2px_8px_rgba(45,52,54,0.12)]"><a class="font-label-md text-label-md text-on-surface-variant px-space-md py-space-sm rounded-full transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="home-glance" href="#">Home / Glance</a><a class="font-label-md text-label-md text-on-surface-variant px-space-md py-space-sm rounded-full transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="map-commute" href="#">Map &amp; Commute</a><a class="font-label-md text-label-md text-on-surface-variant px-space-md py-space-sm rounded-full transition-all hover:bg-surface-container-high hover:text-on-surface" data-path="community-trends" href="#">Community &amp; Trends</a></nav><div class="flex items-center gap-space-sm"><button aria-label="Geofence alerts" class="relative p-space-sm rounded-full bg-surface-container-lowest/80 hover:bg-surface-container-high hover:text-on-surface text-on-surface-variant transition-all shadow-[0_2px_8px_rgba(45,52,54,0.03)] flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface animate-pulse"></span></button><div class="flex items-center gap-space-xs bg-surface-container-lowest/80 py-space-xs px-space-sm rounded-full shadow-[0_2px_8px_rgba(45,52,54,0.03)] hover:bg-surface-container-high transition-colors cursor-pointer"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="hidden sm:inline font-label-md text-label-md text-on-surface px-space-xs">Mindful Pilot</span></div></div></div></header><main class="relative z-10 w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Page Header & Ambient Context -->
+<section class="max-w-[1280px] w-full mx-auto px-margin pt-space-md pb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-high px-space-md py-space-xs rounded-full mb-space-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Active Telemetry Sync</span>
+<span class="font-label-sm text-label-sm text-outline">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live NCR Network</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">
+          Delhi NCR Air Quality Intelligence &amp; Ground Truth
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+          A community of 14,280 mindful residents verifying localized micro-climates across capital corridors.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="bg-surface-container-low hover:bg-surface-container-high text-primary px-space-md py-space-sm rounded-full font-label-md text-label-md flex items-center gap-space-xs transition-all shadow-sm active:scale-95" id="refreshFeedBtn">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Refresh Feeds</span>
+</button>
+<button class="bg-primary text-on-primary px-space-lg py-space-sm rounded-full font-label-md text-label-md flex items-center gap-space-xs shadow-md hover:bg-primary-container transition-all active:scale-95" id="openReportModal">
+<span class="material-symbols-outlined text-[18px]">add_location_alt</span>
+<span>Submit Ground Pin</span>
+</button>
+</div>
+</div>
+<!-- 3 Quick KPI Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-lg">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest/70 backdrop-blur-md rounded-2xl p-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Observation Density</span>
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-md text-headline-md text-primary font-bold">142 Today</div>
+<div class="flex items-center gap-space-xs mt-space-xs">
+<span class="inline-flex items-center text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px] mr-0.5">check_circle</span> 91% verified
+            </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">by localized BAM sensors</span>
+</div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest/70 backdrop-blur-md rounded-2xl p-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Traffic Idling Stress (TIPI)</span>
+<div class="w-8 h-8 rounded-full bg-error-container flex items-center justify-center text-on-error-container">
+<span class="material-symbols-outlined text-[18px]">traffic</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-md text-headline-md text-primary font-bold flex items-baseline gap-space-xs">
+            74<span class="font-label-lg text-label-lg text-on-surface-variant font-normal">/ 100</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-error"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Severe Idling Peak at Ring Road &amp; DND</span>
+</div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest/70 backdrop-blur-md rounded-2xl p-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Atmospheric Window</span>
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">air</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-md text-headline-md text-primary font-bold">Improving after 3 PM</div>
+<div class="flex items-center gap-space-xs mt-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">explore</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Westerly Breeze 14 km/h dispersing particulates</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Two-Column Analytic & Live Feed Grid -->
+<section class="max-w-[1280px] w-full mx-auto px-margin pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: 7-Day Traffic vs. Pollution Analytics Chart (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Primary Dual-Trace Analytics Card -->
+<div class="bg-surface-container-lowest/80 backdrop-blur-md rounded-2xl p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">query_stats</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">
+                  Traffic Congestion vs. PM2.5 Exposure Correlation
+                </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Overlaying real-time delay indexes with continuous CPCB BAM PM2.5 sensors on Delhi arterials.
+              </p>
+</div>
+<!-- Legend Indicators -->
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-md py-space-xs rounded-full shrink-0">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-on-surface">PM2.5 (μg/m³)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Delay (Mins)</span>
+</div>
+</div>
+</div>
+<!-- Correlation Insight Pill -->
+<div class="mt-space-md bg-surface-container-low p-space-sm rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">insights</span>
+<span class="font-label-md text-label-md text-primary truncate">
+                Strong r = 0.84 Pearson correlation between stop-and-go congestion &amp; localized PM2.5 spikes.
+              </span>
+</div>
+<span class="hidden sm:inline-block font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant px-space-sm py-0.5 rounded-full shrink-0 shadow-sm">
+              p &lt; 0.001
+            </span>
+</div>
+<!-- Responsive Dual Line Chart SVG -->
+<div class="mt-space-lg w-full relative">
+<div class="w-full h-64 relative">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 700 240">
+<!-- Background Grid Lines -->
+<line class="text-surface-container-highest/60" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="680" y1="30" y2="30"></line>
+<line class="text-surface-container-highest/60" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="680" y1="80" y2="80"></line>
+<line class="text-surface-container-highest/60" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="680" y1="130" y2="130"></line>
+<line class="text-surface-container-highest/60" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="680" y1="180" y2="180"></line>
+<line class="text-outline-variant/80" stroke="currentColor" stroke-width="1" x1="40" x2="680" y1="210" y2="210"></line>
+<!-- Left Y-Axis Labels (PM2.5) -->
+<text class="font-label-sm text-[10px] fill-on-surface-variant font-medium" text-anchor="end" x="32" y="34">350</text>
+<text class="font-label-sm text-[10px] fill-on-surface-variant font-medium" text-anchor="end" x="32" y="84">250</text>
+<text class="font-label-sm text-[10px] fill-on-surface-variant font-medium" text-anchor="end" x="32" y="134">150</text>
+<text class="font-label-sm text-[10px] fill-on-surface-variant font-medium" text-anchor="end" x="32" y="184">50</text>
+<!-- Traffic Shaded Corridor (8 AM - 11 AM Rush & 6 PM - 9 PM) -->
+<rect class="text-surface-container-high/40" fill="currentColor" height="190" rx="4" width="115" x="145" y="20"></rect>
+<rect class="text-surface-container-high/40" fill="currentColor" height="190" rx="4" width="125" x="445" y="20"></rect>
+<!-- Rush Hour Labels -->
+<text class="font-label-sm text-[9px] fill-outline uppercase font-semibold" text-anchor="middle" x="202" y="16">Morning Rush</text>
+<text class="font-label-sm text-[9px] fill-outline uppercase font-semibold" text-anchor="middle" x="507" y="16">Evening Rush</text>
+<!-- Traffic Delay Area Gradient -->
+<defs>
+<lineargradient id="trafficGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#2D3436" stop-opacity="0.18"></stop>
+<stop offset="100%" stop-color="#2D3436" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="pmGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#BA1A1A" stop-opacity="0.22"></stop>
+<stop offset="100%" stop-color="#BA1A1A" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Line 2: Traffic Delay Index (Slate Fill & Line) -->
+<path d="M 50,190 C 90,188 120,180 150,130 C 180,75 220,95 260,160 C 300,185 360,188 420,175 C 460,110 500,60 540,85 C 580,140 620,175 670,185 L 670,210 L 50,210 Z" fill="url(#trafficGradient)"></path>
+<path d="M 50,190 C 90,188 120,180 150,130 C 180,75 220,95 260,160 C 300,185 360,188 420,175 C 460,110 500,60 540,85 C 580,140 620,175 670,185" fill="none" stroke="#2D3436" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Line 1: PM2.5 Microgram Line (Coral Red) -->
+<path d="M 50,175 C 90,170 120,160 160,85 C 190,45 225,65 265,145 C 310,170 370,165 425,150 C 465,80 505,38 545,55 C 585,120 630,150 670,165 L 670,210 L 50,210 Z" fill="url(#pmGradient)"></path>
+<path d="M 50,175 C 90,170 120,160 160,85 C 190,45 225,65 265,145 C 310,170 370,165 425,150 C 465,80 505,38 545,55 C 585,120 630,150 670,165" fill="none" stroke="#BA1A1A" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Interactive High Watermark Data Nodes -->
+<!-- Morning Peak Point -->
+<circle cx="190" cy="45" fill="#FAF9F6" r="4.5" stroke="#BA1A1A" stroke-width="2.5"></circle>
+<circle cx="180" cy="75" fill="#FAF9F6" r="4.5" stroke="#2D3436" stroke-width="2.5"></circle>
+<!-- Evening Peak Point -->
+<circle cx="505" cy="38" fill="#FAF9F6" r="4.5" stroke="#BA1A1A" stroke-width="2.5"></circle>
+<circle cx="500" cy="60" fill="#FAF9F6" r="4.5" stroke="#2D3436" stroke-width="2.5"></circle>
+<!-- X-Axis Timestamps -->
+<text class="font-label-sm text-[10px] fill-on-surface-variant font-medium" text-anchor="middle" x="50" y="228">04:00</text>
+<text class="font-label-sm text-[10px] fill-on-surface-variant font-medium" text-anchor="middle" x="150" y="228">08:00</text>
+<text class="font-label-sm text-[10px] fill-on-surface-variant font-medium" text-anchor="middle" x="260" y="228">12:00</text>
+<text class="font-label-sm text-[10px] fill-on-surface-variant font-medium" text-anchor="middle" x="370" y="228">15:00</text>
+<text class="font-label-sm text-[10px] fill-on-surface-variant font-medium" text-anchor="middle" x="480" y="228">18:00</text>
+<text class="font-label-sm text-[10px] fill-on-surface-variant font-medium" text-anchor="middle" x="580" y="228">21:00</text>
+<text class="font-label-sm text-[10px] fill-on-surface-variant font-medium" text-anchor="middle" x="670" y="228">24:00</text>
+</svg>
+<!-- Floating Micro Callout -->
+<div class="absolute top-4 left-[26%] bg-surface-container-lowest/90 backdrop-blur-md rounded-lg px-space-xs py-1 shadow-md pointer-events-none hidden sm:flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="font-label-sm text-[11px] text-on-surface font-semibold">Peak 328 μg/m³ (+26m delay)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Weekly Corridor Micro-Climate Breakdown -->
+<div class="bg-surface-container-lowest/80 backdrop-blur-md rounded-2xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h3 class="font-label-lg text-label-lg text-primary font-bold">Key Arterial Corridor Observations</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live comparison across frequent commute sectors</p>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-space-sm py-1 rounded-full">
+              4 Monitored Arterials
+            </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Corridor 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low transition-colors hover:bg-surface-container-high/80">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">Ashram Chowk</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-[11px] px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  Hazardous
+                </span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-space-sm pt-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Avg AQI</span>
+<span class="font-headline-md text-headline-md text-error font-bold leading-none">362</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Traffic Delay</span>
+<span class="font-headline-md text-headline-md text-primary font-bold leading-none">+24m</span>
+</div>
+</div>
+</div>
+<!-- Corridor 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low transition-colors hover:bg-surface-container-high/80">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">DND Flyway Corridor</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-[11px] px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  Hazardous
+                </span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-space-sm pt-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Avg AQI</span>
+<span class="font-headline-md text-headline-md text-error font-bold leading-none">310</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Traffic Delay</span>
+<span class="font-headline-md text-headline-md text-primary font-bold leading-none">+18m</span>
+</div>
+</div>
+</div>
+<!-- Corridor 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low transition-colors hover:bg-surface-container-high/80">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">Chanakyapuri Shanti Path</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-[11px] px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Sage Clean
+                </span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-space-sm pt-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Avg AQI</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold leading-none">92</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Traffic Delay</span>
+<span class="font-headline-md text-headline-md text-primary font-bold leading-none">+2m</span>
+</div>
+</div>
+</div>
+<!-- Corridor 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low transition-colors hover:bg-surface-container-high/80">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">MG Road Green Belt</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-[11px] px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Moderate
+                </span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-space-sm pt-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Avg AQI</span>
+<span class="font-headline-md text-headline-md text-primary font-bold leading-none">165</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Traffic Delay</span>
+<span class="font-headline-md text-headline-md text-primary font-bold leading-none">+6m</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Ambient Community Photo Banner -->
+<div class="relative rounded-2xl overflow-hidden shadow-sm h-48 bg-surface-container-high">
+<div class="bg-cover bg-center w-full h-full" data-alt="A serene Scandinavian minimalist photograph of morning mist drifting through the eucalyptus trees and architecture of New Delhi, soft daylight diffuse lighting, calm pastel sage and muted eggshell tones, clean atmospheric composition, high resolution documentary style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsHHc2Yh8zdxEJtfKo9QBQxs-wj0QzVVpKg5v14P6wsxA2zbrItAbdDYm2olSHgrVxXpRdKVsNeiNCHSNDVHNDVxRhYBzOINKhvX_ZF-OONWclRrMoy5bs6uObBEwhGif3y13LA_pyuCs6wPxiUIf2_McwGmpEuYzAMTP3nYtxd3SMoyAPvkEAhCh7v-pp4PDpoDZYmgOd_qklstKAHZTTWuqHqDD1u00Q7KB05ybQLRBCPn76evCt')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm text-secondary-fixed font-semibold uppercase tracking-wider">Localized Field Research</span>
+<p class="font-headline-sm text-white font-bold max-w-sm mt-0.5">
+              Trees cut fine particulates by up to 28% in central Lutyens avenues.
+            </p>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: "Aura Community Pins" Live Ground Feed (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Contribute Pin Action Banner -->
+<div class="bg-gradient-to-br from-secondary-fixed/40 via-surface-container-low to-surface-container-lowest/90 backdrop-blur-md rounded-2xl p-space-md shadow-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">add_location</span>
+</div>
+<div class="min-w-0 flex-1">
+<h3 class="font-label-lg text-label-lg text-primary font-bold">Contribute Ground Pin</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Noticed heavy local burning or dust? Report in 15 seconds to alert neighbors and municipal marshals.
+              </p>
+<div class="mt-space-sm flex items-center gap-space-sm">
+<button class="bg-secondary text-on-secondary hover:bg-secondary/90 px-space-md py-1.5 rounded-full font-label-sm text-label-sm font-semibold transition-all shadow-sm active:scale-95">
+                  Pin Incident Now
+                </button>
+<span class="font-label-sm text-label-sm text-outline">+50 Aura Karma</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Filter Tabs -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">Live Community Pins</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span> Real-time
+            </span>
+</div>
+<!-- Filter Scrollable Pill Container -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 scrollbar-none" id="feedFilters">
+<button class="px-space-md py-1 rounded-full font-label-sm text-label-sm bg-primary text-on-primary font-medium shrink-0 transition-all" data-filter="all">
+              All Reports
+            </button>
+<button class="px-space-md py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-medium shrink-0 transition-all" data-filter="spikes">
+              Spikes &amp; Burning
+            </button>
+<button class="px-space-md py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-medium shrink-0 transition-all" data-filter="dust">
+              Construction Dust
+            </button>
+<button class="px-space-md py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-medium shrink-0 transition-all" data-filter="clean">
+              Clean Havens
+            </button>
+<button class="px-space-md py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-medium shrink-0 transition-all" data-filter="verified">
+              Verified (&gt;80%)
+            </button>
+</div>
+</div>
+<!-- Feed List Deck -->
+<div class="flex flex-col gap-space-md" id="feedCardsDeck">
+<!-- Card 1: Construction Dust -->
+<article class="bg-surface-container-lowest/80 backdrop-blur-md rounded-2xl p-space-md shadow-sm transition-all hover:shadow-md" data-category="dust verified">
+<!-- Header: User & Trust -->
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center font-label-md text-label-md text-primary font-bold">
+                  AS
+                </div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold truncate">Aarav S.</span>
+<span class="font-label-sm text-label-sm text-outline">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Vasant Kunj Sec C</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-[11px] text-secondary font-semibold">Trust 94% ★</span>
+<span class="font-label-sm text-[11px] text-outline">• Continuous Observer</span>
+</div>
+</div>
+</div>
+<span class="shrink-0 font-label-sm text-[11px] px-space-sm py-1 rounded-full bg-surface-container-highest text-on-surface font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Construction Dust
+              </span>
+</div>
+<!-- Notes Content -->
+<p class="font-body-md text-body-md text-on-surface mt-space-sm">
+              Uncovered fly ash truck transit near Pocket 4 gate without water sprinklers. AQI jumped from 140 to 260 on portable Temtop M10 handheld sensor.
+            </p>
+<!-- Verification Metadata -->
+<div class="mt-space-sm flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified</span>
+<span>12 mins ago</span>
+<span>•</span>
+<span class="text-secondary font-medium">18 neighbors confirmed</span>
+</div>
+<!-- Actions Footer -->
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<button class="upvote-btn flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-secondary-container hover:text-on-secondary-container text-on-surface-variant font-label-sm text-label-sm transition-all" data-count="24">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span class="btn-label">Helpful (24)</span>
+</button>
+<button class="view-map-btn flex items-center gap-1 text-primary hover:text-secondary font-label-sm text-label-sm font-semibold transition-colors">
+<span class="material-symbols-outlined text-[16px]">place</span>
+<span>View on Map</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Biomass Burning -->
+<article class="bg-surface-container-lowest/80 backdrop-blur-md rounded-2xl p-space-md shadow-sm transition-all hover:shadow-md" data-category="spikes verified">
+<!-- Header: User & Trust -->
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center font-label-md text-label-md text-primary font-bold">
+                  PM
+                </div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold truncate">Pooja M.</span>
+<span class="font-label-sm text-label-sm text-outline">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Noida Sector 62</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-[11px] text-secondary font-semibold">Trust 88% ★</span>
+<span class="font-label-sm text-[11px] text-outline">• Sensor Host</span>
+</div>
+</div>
+</div>
+<span class="shrink-0 font-label-sm text-[11px] px-space-sm py-1 rounded-full bg-error-container text-on-error-container font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+                Biomass Smoke
+              </span>
+</div>
+<!-- Notes Content -->
+<p class="font-body-md text-body-md text-on-surface mt-space-sm">
+              Heavy dry leaf burning drifting near industrial cluster green belt. Visibility reduced to 200m; pungent acrid odor indoors despite HEPA running.
+            </p>
+<!-- Verification Metadata -->
+<div class="mt-space-sm flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified</span>
+<span>34 mins ago</span>
+<span>•</span>
+<span class="text-secondary font-medium">41 neighbors confirmed</span>
+</div>
+<!-- Actions Footer -->
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<button class="upvote-btn flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-secondary-container hover:text-on-secondary-container text-on-surface-variant font-label-sm text-label-sm transition-all" data-count="41">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span class="btn-label">Helpful (41)</span>
+</button>
+<button class="view-map-btn flex items-center gap-1 text-primary hover:text-secondary font-label-sm text-label-sm font-semibold transition-colors">
+<span class="material-symbols-outlined text-[16px]">place</span>
+<span>View on Map</span>
+</button>
+</div>
+</article>
+<!-- Card 3: Clean Haven -->
+<article class="bg-surface-container-lowest/80 backdrop-blur-md rounded-2xl p-space-md shadow-sm transition-all hover:shadow-md" data-category="clean verified">
+<!-- Header: User & Trust -->
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center font-label-md text-label-md text-on-secondary-fixed font-bold">
+                  KV
+                </div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold truncate">Kabir V.</span>
+<span class="font-label-sm text-label-sm text-outline">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Sunder Nursery</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-[11px] text-secondary font-semibold">Trust 99% ★</span>
+<span class="font-label-sm text-[11px] text-outline">• Lead Ecologist</span>
+</div>
+</div>
+</div>
+<span class="shrink-0 font-label-sm text-[11px] px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Clean Haven
+              </span>
+</div>
+<!-- Notes Content -->
+<p class="font-body-md text-body-md text-on-surface mt-space-sm">
+              Dense micro-canopy effect: AQI reading 68 inside the heritage park while Mathura Rd outside is 290! Excellent spot for morning breathing routines until noon.
+            </p>
+<!-- Verification Metadata -->
+<div class="mt-space-sm flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified</span>
+<span>1 hr ago</span>
+<span>•</span>
+<span class="text-secondary font-medium">56 neighbors confirmed</span>
+</div>
+<!-- Actions Footer -->
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<button class="upvote-btn flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-secondary-container hover:text-on-secondary-container text-on-surface-variant font-label-sm text-label-sm transition-all" data-count="56">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span class="btn-label">Helpful (56)</span>
+</button>
+<button class="view-map-btn flex items-center gap-1 text-primary hover:text-secondary font-label-sm text-label-sm font-semibold transition-colors">
+<span class="material-symbols-outlined text-[16px]">place</span>
+<span>View on Map</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Elegant Scandinavian Pagination -->
+<div class="flex items-center justify-between pt-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Showing 3 of 142 reports</span>
+<div class="flex items-center gap-space-xs">
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="font-label-sm text-label-sm text-primary font-bold px-2">1 / 48</span>
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Modal: Submit Pin (Hidden by default) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/40 backdrop-blur-sm hidden" id="submitPinModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-space-lg shadow-xl relative animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">add_location_alt</span>
+<h3 class="font-label-lg text-label-lg text-primary font-bold">Log Ground Air Observation</h3>
+</div>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" id="closeReportModal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-md mt-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold block mb-1">Observation Type</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low hover:bg-secondary-fixed/30 cursor-pointer text-center">
+<input class="sr-only" name="reportType" type="radio" value="dust"/>
+<span class="material-symbols-outlined text-[20px] text-primary">grain</span>
+<span class="font-label-sm text-[11px] text-on-surface mt-1 font-medium">Dust / Ash</span>
+</label>
+<label class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low hover:bg-error-container/40 cursor-pointer text-center">
+<input checked="" class="sr-only" name="reportType" type="radio" value="smoke"/>
+<span class="material-symbols-outlined text-[20px] text-error">local_fire_department</span>
+<span class="font-label-sm text-[11px] text-on-surface mt-1 font-medium">Biomass Smoke</span>
+</label>
+<label class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low hover:bg-secondary-fixed cursor-pointer text-center">
+<input class="sr-only" name="reportType" type="radio" value="clean"/>
+<span class="material-symbols-outlined text-[20px] text-secondary">park</span>
+<span class="font-label-sm text-[11px] text-on-surface mt-1 font-medium">Clean Haven</span>
+</label>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold block mb-1">Pin Location in NCR</label>
+<div class="relative">
+<span class="material-symbols-outlined text-[18px] text-outline absolute left-3 top-2.5">location_on</span>
+<input class="w-full bg-surface-container-low pl-9 pr-3 py-2 rounded-xl text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/30" placeholder="e.g. Ring Road near Lajpat Nagar Flyover" type="text"/>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold block mb-1">Details &amp; Sensor Reading</label>
+<textarea class="w-full bg-surface-container-low p-3 rounded-xl text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/30 resize-none" placeholder="Describe smoke density, odor, portable AQI readings or source..." rows="3"></textarea>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high transition-colors" id="cancelModalBtn">
+            Cancel
+          </button>
+<button class="bg-primary text-on-primary px-space-lg py-2 rounded-full font-label-sm text-label-sm font-semibold hover:bg-primary-container transition-all shadow-sm" id="submitIncidentBtn">
+            Publish Pin to Feed
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Map Flyout Drawer (Hidden by default) -->
+<div class="fixed bottom-6 right-6 z-40 max-w-sm w-full bg-surface-container-lowest/95 backdrop-blur-xl rounded-2xl p-space-md shadow-2xl border border-white/60 hidden transition-all" id="mapDrawer">
+<div class="flex items-center justify-between pb-space-xs mb-space-xs border-b border-surface-container-high">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">map</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Sensor Triangulation</span>
+</div>
+<button class="w-6 h-6 rounded-full hover:bg-surface-container-high flex items-center justify-center text-outline" id="closeMapDrawer">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="w-full h-36 bg-cover bg-center rounded-xl relative overflow-hidden" data-location="New Delhi, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEk1hIQQU7A3NWPnrG7KxcxBK1v0surcU2WUF5_qao1vuGyQK2K6_lTKAjAMZhHJx8pQu00vWz9DPy-jWNvbmpfFamRmQ3uZ8KppAFN2F0uKUTtIbxQ6PSwzlCrWU9HGBbt46-YkhxHevNnQzKmQu-TpluB9tJYLuaCHFd6oNM54EhDIQM7hTj2VMSFmu7iiJ2__Dm2oAFYpfNqvGGpyAr8Cl9FPqCLA5mqIQ_r-KoOz8peja-mBIJ')">
+<div class="absolute inset-0 bg-primary/10 flex items-center justify-center">
+<div class="bg-surface-container-lowest/90 px-space-sm py-1 rounded-full shadow-md flex items-center gap-1 text-primary font-label-sm text-[11px] font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+          Active BAM Station 450m away
+        </div>
+</div>
+</div>
+<div class="mt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-[11px]">
+<span>CPCB Station: R.K. Puram</span>
+<span class="text-secondary font-semibold">Live Confirmed</span>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interactions: Tab Filtering, Upvoting & Modals
+  (function initAuraCommunityInteractions() {
+    // 1. Upvote Counters
+    const upvoteButtons = document.querySelectorAll('.upvote-btn');
+    upvoteButtons.forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        let count = parseInt(this.getAttribute('data-count'), 10) || 0;
+        const isUpvoted = this.getAttribute('data-voted') === 'true';
+
+        if (!isUpvoted) {
+          count += 1;
+          this.setAttribute('data-voted', 'true');
+          this.classList.add('bg-secondary-fixed', 'text-on-secondary-fixed');
+          this.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        } else {
+          count -= 1;
+          this.removeAttribute('data-voted');
+          this.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed');
+          this.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        }
+        this.setAttribute('data-count', count);
+        const label = this.querySelector('.btn-label');
+        if (label) {
+          label.textContent = `Helpful (${count})`;
+        }
+      });
+    });
+
+    // 2. Feed Filter Switcher
+    const filterButtons = document.querySelectorAll('#feedFilters button');
+    const articles = document.querySelectorAll('#feedCardsDeck article');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary');
+          b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        this.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        this.classList.add('bg-primary', 'text-on-primary');
+
+        const filter = this.getAttribute('data-filter');
+        articles.forEach(article => {
+          const category = article.getAttribute('data-category') || '';
+          if (filter === 'all' || category.includes(filter)) {
+            article.classList.remove('hidden');
+          } else {
+            article.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // 3. Modal Actions
+    const modal = document.getElementById('submitPinModal');
+    const openBtn = document.getElementById('openReportModal');
+    const closeBtn = document.getElementById('closeReportModal');
+    const cancelBtn = document.getElementById('cancelModalBtn');
+    const submitBtn = document.getElementById('submitIncidentBtn');
+
+    function toggleModal(show) {
+      if (!modal) return;
+      if (show) {
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    }
+
+    if (openBtn) openBtn.addEventListener('click', () => toggleModal(true));
+    if (closeBtn) closeBtn.addEventListener('click', () => toggleModal(false));
+    if (cancelBtn) cancelBtn.addEventListener('click', () => toggleModal(false));
+    if (submitBtn) {
+      submitBtn.addEventListener('click', () => {
+        submitBtn.innerHTML = 'Submitting...';
+        setTimeout(() => {
+          submitBtn.innerHTML = 'Publish Pin to Feed';
+          toggleModal(false);
+        }, 600);
+      });
+    }
+
+    // 4. View Map Drawer
+    const mapDrawer = document.getElementById('mapDrawer');
+    const closeMapDrawer = document.getElementById('closeMapDrawer');
+    const viewMapBtns = document.querySelectorAll('.view-map-btn');
+
+    viewMapBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (mapDrawer) mapDrawer.classList.remove('hidden');
+      });
+    });
+
+    if (closeMapDrawer) {
+      closeMapDrawer.addEventListener('click', () => {
+        if (mapDrawer) mapDrawer.classList.add('hidden');
+      });
+    }
+
+    // 5. Refresh Feed Button visual feedback
+    const refreshBtn = document.getElementById('refreshFeedBtn');
+    if (refreshBtn) {
+      refreshBtn.addEventListener('click', function() {
+        const icon = this.querySelector('.material-symbols-outlined');
+        if (icon) icon.classList.add('animate-spin');
+        setTimeout(() => {
+          if (icon) icon.classList.remove('animate-spin');
+        }, 800);
+      });
+    }
+  })();
+</script></main><footer class="relative z-10 w-full bg-surface-container-low/60 mt-space-xl py-space-xl"><div class="max-w-[1280px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-secondary"></div><span class="font-label-sm text-label-sm text-on-surface-variant">CPCB &amp; DPCC Continuous Ambient Air Monitoring System Telemetry Feed</span></div><div class="flex items-center gap-space-lg"><span class="font-body-sm text-body-sm text-outline">© 2025 Aura NCR • Mindful Clean Air Initiative</span></div></div></footer></body></html>

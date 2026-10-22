@@ -1,0 +1,6 @@
+{
+  "name": "Aura NCR - Delhi NCR Air Quality Companion",
+  "description": "Delhi NCR air quality intelligence with Google Maps live tracking, high pollution geofence alerts, traffic correlation, indoor vs outdoor telemetry, and community ground truth.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

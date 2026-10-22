@@ -1,0 +1,245 @@
+---
+name: Mindful Nordic Mist
+colors:
+  surface: '#faf9f6'
+  surface-dim: '#dbdad7'
+  surface-bright: '#faf9f6'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f4f3f1'
+  surface-container: '#efeeeb'
+  surface-container-high: '#e9e8e5'
+  surface-container-highest: '#e3e2e0'
+  on-surface: '#1a1c1a'
+  on-surface-variant: '#434749'
+  inverse-surface: '#2f312f'
+  inverse-on-surface: '#f2f1ee'
+  outline: '#747879'
+  outline-variant: '#c3c7c8'
+  surface-tint: '#586062'
+  primary: '#181f21'
+  on-primary: '#ffffff'
+  primary-container: '#2d3436'
+  on-primary-container: '#959c9f'
+  inverse-primary: '#c1c8ca'
+  secondary: '#036c4c'
+  on-secondary: '#ffffff'
+  secondary-container: '#9bf1c9'
+  on-secondary-container: '#0e7050'
+  tertiary: '#002322'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#003a39'
+  on-tertiary-container: '#63a7a5'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#dde4e6'
+  primary-fixed-dim: '#c1c8ca'
+  on-primary-fixed: '#161d1f'
+  on-primary-fixed-variant: '#41484a'
+  secondary-fixed: '#9ef4cc'
+  secondary-fixed-dim: '#82d7b0'
+  on-secondary-fixed: '#002115'
+  on-secondary-fixed-variant: '#005139'
+  tertiary-fixed: '#aaefec'
+  tertiary-fixed-dim: '#8ed3d0'
+  on-tertiary-fixed: '#00201f'
+  on-tertiary-fixed-variant: '#00504e'
+  background: '#faf9f6'
+  on-background: '#1a1c1a'
+  surface-variant: '#e3e2e0'
+typography:
+  headline-xl:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 56px
+    fontWeight: '700'
+    lineHeight: 64px
+    letterSpacing: -0.03em
+  headline-xl-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 48px
+    letterSpacing: -0.025em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 36px
+    fontWeight: '600'
+    lineHeight: 44px
+    letterSpacing: -0.02em
+  headline-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '600'
+    lineHeight: 36px
+    letterSpacing: -0.015em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '400'
+    lineHeight: 28px
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 20px
+  label-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 20px
+    letterSpacing: 0.01em
+  label-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.02em
+  label-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 14px
+    letterSpacing: 0.03em
+  metric-display:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 72px
+    fontWeight: '700'
+    lineHeight: 76px
+    letterSpacing: -0.04em
+  metric-display-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 54px
+    fontWeight: '700'
+    lineHeight: 58px
+    letterSpacing: -0.03em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-mobile: 1rem
+  margin: 3rem
+  margin-tablet: 2rem
+  margin-mobile: 1.25rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system blends quiet Scandinavian minimalism with weightless, tactile glassmorphism. Designed for daily ambient monitoring in high-smog urban environments, the aesthetic deliberate avoids the visual anxiety of typical hazard dashboards. Instead of alarmist alert sirens, it delivers a serene, mindful sanctuary defined by translucent daylight, generous breathing space, and soft organic balance.
+
+Key tenets:
+- **Calm Awareness Over Panic:** The atmospheric tension of Delhi NCR's air is balanced by gentle, cloud-soft visual structures and low-strain pastel indicators.
+- **Translucent Layering:** Surfaces mimic morning mist and daylight passing through frosted glass, grounding interface elements over subtle atmospheric depth without visual clutter.
+- **Mindful Clarity:** Generous spacing, low-saturation backgrounds, and high-readability slate typography give users room to mentally decompress while processing actionable health metrics.
+
+## Colors
+
+The palette grounds itself in natural, tactile neutrals: an eggshell base canvas paired with rich, deep-slate text to avoid stark digital harshness. Chromatic alerts are softened into a curated pastel continuum that signals pollution intensity through mindful, readable tones rather than aggressive neon signals.
+
+### Core Tones
+- **Canvas Base:** `#FAF9F6` (Eggshell white) — an organic, paper-like background that mitigates eye fatigue.
+- **Primary Ink:** `#2D3436` (Dark slate) — deep, grounded slate for crisp, readable copy without the harsh contrast of pure `#000000`.
+- **Secondary Ink:** `#636E72` (Muted slate) — secondary labels, metadata, and metric subtexts.
+- **Tertiary Accent (Clean Air Routes / Water):** `#5A9E9C` (Nordic Teal) with paired soft lavender accents (`#8E8BB4`) for map paths, filtration schedules, and atmospheric moisture indicators.
+
+### Pastel Air Quality Index (AQI) Continuum
+- **AQI 0–100 (Optimal / Moderate):** Surface `#A8E6CF` (Sage Green) paired with `#348B69` for text, micro-labels, and progress rings.
+- **AQI 101–250 (Moderate / Poor):** Surface `#FFE599` (Buttercup Yellow) paired with `#B38600` for readable typography and warnings.
+- **AQI 251–500+ (Hazardous / Severe):** Surface `#FFB3B3` (Soft Coral Red) paired with `#D64545` for authoritative, high-contrast, low-panic alerts.
+
+### Glass Tokens
+- **Glass Card Fill:** `rgba(255, 255, 255, 0.75)` with `backdrop-filter: blur(16px)`
+- **Glass Border:** `1px solid rgba(255, 255, 255, 0.60)`
+- **Glass Subtle Inset:** `inset 0 1px 1px 0 rgba(255, 255, 255, 0.80)`
+
+## Typography
+
+The type hierarchy is powered by **Plus Jakarta Sans**, a modern humanist geometric sans-serif that balances clean Scandinavian rationalism with welcoming rounded terminals. It eliminates sterile clinical coldness while maintaining exceptional legibility for atmospheric data across both high-density mobile cards and wide monitor canvases.
+
+- **Numeric Display:** AQI ratings and particulate measurements (PM2.5, PM10) leverage tabular number alignments and tight tracking (`-0.03em` to `-0.04em`) to act as architectural focal points without shouting.
+- **Copy & Guidance:** Body copy prioritizes generous line-heights (1.5x–1.6x) to preserve peaceful visual flow.
+- **Micro-labels & Badges:** Rendered in medium-to-semibold weights with subtle tracking to maximize scan-readability against frosted glass surfaces.
+
+## Layout & Spacing
+
+The layout model emphasizes airy, breathing space modeled after Nordic architecture: open sightlines, generous margins, and floating glass modules.
+
+- **Grid Architecture:** 
+  - **Desktop (1024px+):** 12-column fluid grid, max-width `1280px`, center-aligned with `3rem` margins and `1.5rem` gutters.
+  - **Tablet (768px–1023px):** 8-column fluid grid, `2rem` margins, `1.25rem` gutters.
+  - **Mobile (<768px):** 4-column fluid stack, `1.25rem` margins, `1rem` gutters.
+- **Rhythm & Safe Insets:** Cards feature generous internal padding (`space-lg` to `space-xl`) to preserve the feeling of airy spaciousness. Element groupings utilize an 8px base rhythm (`space-xs` = 4px, `space-sm` = 8px, `space-md` = 16px, `space-lg` = 24px, `space-xl` = 40px).
+- **Responsive Stacking:** Atmospheric rings and multi-station comparison grids collapse smoothly from horizontal tri-card groupings to full-width swipeable decks on touch screens.
+
+## Elevation & Depth
+
+Visual depth is achieved through translucent optical layering, ambient light dispersion, and gentle frosted blurs rather than heavy drop shadows.
+
+- **Surface Glass (Level 1 - Floating Cards):** 
+  - Fill: `rgba(255, 255, 255, 0.75)`
+  - Backdrop Blur: `blur(16px)`
+  - Border: `1px solid rgba(255, 255, 255, 0.65)`
+  - Shadow: `0 8px 32px -4px rgba(45, 52, 54, 0.04), 0 4px 12px -2px rgba(45, 52, 54, 0.02)`
+  - Highlight: Inset top specular highlight `inset 0 1px 0 rgba(255, 255, 255, 0.90)`
+- **Interactive Glass (Level 2 - Hover / Active / Modal Overlays):** 
+  - Fill: `rgba(255, 255, 255, 0.88)`
+  - Backdrop Blur: `blur(24px)`
+  - Border: `1px solid rgba(255, 255, 255, 0.80)`
+  - Shadow: `0 16px 40px -8px rgba(45, 52, 54, 0.07), 0 6px 16px -4px rgba(45, 52, 54, 0.03)`
+- **Atmospheric Underlay:** Extremely soft, large-radius ambient color orbs (`filter: blur(80px)`) gently illuminate the eggshell background beneath glass surfaces to subtly reflect regional AQI conditions without tinting the typography.
+
+## Shapes
+
+The design system employs soft, organic corner radii to evoke natural pebbles, water droplets, and rounded glass lenses.
+
+- **Cards & Containers:** `rounded-xl` (1.5rem / 24px) gives larger glass planes a soft, welcoming, non-institutional quality.
+- **Inner Modules & Interactive Panels:** `rounded-lg` (1rem / 16px) establishes balanced nested hierarchy.
+- **Pills & Micro-Components:** Complete pill curvature (`9999px`) is strictly enforced for AQI indicator badges, status chips, segmented filter tabs, and circular action buttons.
+- **Frosted Rings:** AQI circular progress gauges and clean-air radar meters feature soft, rounded stroke caps (`stroke-linecap: round`) with zero sharp edges.
+
+## Components
+
+### Buttons & Interactive Controls
+- **Primary Action:** Solid dark slate (`#2D3436`) with `#FAF9F6` text, fully pill-rounded (`border-radius: 9999px`), styled with subtle 1px translucent highlight and gentle press depth (`transform: scale(0.98)`).
+- **Glass Tertiary Button:** `rgba(255, 255, 255, 0.65)` fill, 1px white border, slate text. On hover: background shifts to `rgba(255, 255, 255, 0.90)`.
+
+### AQI Pill Badges
+- **Pill Construction:** Height `28px` to `34px`, pill-shaped (`9999px`), horizontal padding `space-md`.
+- **Styling:** Pastel background at 85% opacity, paired with high-contrast tinted slate text (e.g., Coral `#FFB3B3` with `#D64545` ink). Contains a `6px` breathing pulsing status dot.
+
+### Frosted Metric Rings & Trend Graphs
+- **Circular AQI Rings:** Dual-path SVG dials. Background track uses `rgba(45, 52, 54, 0.05)`. Progress stroke uses the corresponding spectrum pastel color with a subtle drop glow (`drop-shadow(0 2px 8px [tint])`). Center metric displays numerical AQI in bold headline-xl with muted label beneath.
+- **Trend Line & Area Graphs:** Soft linear gradient fills under curves, fading from 20% opacity at peak to 0% at baseline. Smooth bezier lines with round tooltips wrapped in frosted glass pills.
+
+### Cards & Station Panels
+- **Structure:** Encased in standard glass elevation. Features clear header regions containing station locality (e.g., "Lodhi Road, ND", "Sector 62, Noida"), current time, live pill badge, and particulate breakdown grids (PM2.5, PM10, NO2, AQI index).
+- **Dividers:** Frosted hairline borders (`1px solid rgba(45, 52, 54, 0.06)`).
+
+### Input Fields & Search Bars
+- **Surface:** Translucent white capsule (`rgba(255, 255, 255, 0.70)`), `1px solid rgba(255, 255, 255, 0.80)`.
+- **Interaction:** On focus, expands to `rgba(255, 255, 255, 0.95)` with a Nordic Teal ring glow (`0 0 0 3px rgba(90, 158, 156, 0.20)`). Placeholder styled in `#636E72`.
+
+### Checkboxes, Radios, & Segmented Toggles
+- **Toggles:** Frosted capsule container housing a sliding white glass pill thumb with subtle elevation shadow.
+- **Selectors:** Soft rounded boxes (`6px` radius) or circles, checked state reveals deep slate or Nordic teal fills with white icons.
